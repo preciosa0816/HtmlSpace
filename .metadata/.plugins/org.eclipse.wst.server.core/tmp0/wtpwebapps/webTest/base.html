@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title></title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<style  type="text/css">
+	body{color:#333;}
+	table th,table td{padding:3px;}
+	
+	#wrap{width:800px; height:440px; }
+	#header{width:760px; height:89px; border-bottom:1px solid #333; padding:50px 20px 0 20px;  }
+	
+	
+	#container:after {	display: block;	content: ""; /* content에 쓰는 내용은 container밑에 작성됨 */	clear: both;}
+	#container div {	float: left;	}
+	#container h2 {	font-size: 18px; font-weight: bold; line-height:49px;height:49px; margin:20px 20px 23px 20px; 
+					background: #efefef; border-left: 5px solid #333; border-bottom:1px solid #333; padding:0 0 0 10px;}
+	
+	
+	.gnb {	text-align: center; margin: 30px 0 0 0; }
+	.gnb li {display: inline;	margin: 0 10px 0 0;}
+	.gnb li a:hover {color: #0000ff; font-weight: bold; }
+	
+	.greeting {	width: 499px;	height: 270px;	border-right: 1px solid #333; }
+	.greeting p{margin:0 0 0 30px;}
+	
+	.intro {	width: 300px;	height: 270px; }
+	.intro table{margin:0 0 0 20px; width:260px;}
+	.intro table td{border:1px solid #333;}
+	.intro table td[scope='row']{text-align: center;}
+	
+	.footer{background: #eee; height:29px; text-align: center; line-height: 29px; border-top:1px solid #333; background: #eee;}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+	<!-- header -->
+		<div id='header'>
+		<h1><a href='http://www.pionnet.co.kr' target="_blank"><img src="images/new_logo.svg" alt="new logo" /></a></h1>
+		<ul class='gnb'>
+			<li><a href='#none'>홈</a></li>
+			<li><a href='#none'>인사말</a></li>
+			<li><a href='#none'>자기소개</a></li>
+			<li><a href='#none'>오시는길</a></li>
+		</ul>
+		</div>
+	<!-- /header -->
+	
+	<!--container-->
+	<div id='container'>
+		<div class='greeting'>
+			<h2>인사말</h2>
+				<p>신입사원 여러분, 입사 첫 주를 맞이하여 수고 많으셨습니다.</p>
+				<p>파이언넷과 함께 큰 성장을 이뤄내시길 바랍니다.</p>
+		</div>
+		<div class='intro'>
+			<h2>자기소개</h2>
+			<table>
+				<tr>
+					<td scope='row'><label for="name">이름</label></td>
+					<td><input type="text" id='name'></input></td>	
+				</tr>
+				<tr>
+					<td scope='row'><label for="tel">전화번호</label></td>
+					<td><input type="text" id='tel'></input></td>				
+				</tr>
+				<tr>
+					<td scope='row'><label for="self">자기소개</label></td>
+					<td><textarea rows="2" cols="20" id='self'></textarea></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--/container-->
+	<!-- footer -->
+		<div class='footer'>
+			<address>&copy; Pionnet Corp.</address>
+		</div>
+	<!-- /footer -->
+	</div>
+</body>
+</html>

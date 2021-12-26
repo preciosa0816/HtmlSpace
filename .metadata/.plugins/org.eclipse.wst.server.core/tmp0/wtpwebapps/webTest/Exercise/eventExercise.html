@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<style>span{border:1px solid red;}</style>
+<body>
+	<ul id="todo-app">
+		<li class="item">Walk the dog</li>
+		<li class="item">Pay bills</li>
+		<li class="item">Make dinner</li>
+		<li class="item">Code for one hour</li>
+	</ul>
+
+<script>
+
+// let items=document.getElementsByClassName("item");
+// for(let item of items){
+// 	item.addEventListener('click',function(){
+// 		alert("you clicked on item : "+ item.innerHTML);
+// 	});
+// }
+
+//성능을 위한 방법 (ex 10000개 이상  for문을 돌린다면?)
+let app= document.getElementById('todo-app');
+app.addEventListener('click',function(e){
+	console.log(e);
+	if(e.target && e.target.nodeName==='LI'){
+		let item = e.target;
+		alert("you clicked on item: "+ e.target.innerHTML);
+	}
+});
+
+
+</script>
+</body>
+</html>

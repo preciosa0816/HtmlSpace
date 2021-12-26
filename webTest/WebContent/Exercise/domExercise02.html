@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<style>span{border:1px solid red;}</style>
+<body>
+<input type="text" name="text" value="텍스트"/>
+<br>
+<script>
+var byName = document.getElementsByName("text");
+document.write("byName[0].type ==> "+byName[0].type+"<br>");
+document.write("byName[0].name ==> "+byName[0].name+"<br>");
+document.write("byName[0].value ==> "+byName[0].value+"<br>");
+for(var i = 0; i < byName.length ; i++){ 		
+	// collection 객체는 이런 식으로 접근이 가능하다
+document.write("byName[i].type ==> "+byName[i].type+"<br>");
+document.write("byName[i].name ==> "+byName[i].name+"<br>");
+document.write("byName[i].value ==> "+byName[i].value+"<br>");
+
+}
+</script>
+
+</body>
+</html>

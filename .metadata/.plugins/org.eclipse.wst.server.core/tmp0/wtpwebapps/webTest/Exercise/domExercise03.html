@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div id="dom_id">여기는 div</div>
+<input type="text" name="text" value="텍스트" id="testId"/>
+<script>
+
+var byName = document.getElementById("testId");
+
+byName.type="text";
+byName.value="변경되었네요?";
+byName.name="oh";
+
+
+function innerHTMLTest(){
+var div = document.getElementsByTagName("div");
+div[0].innerHTML = "<span>span 태그가 들어왔어요</span>" ; 
+};
+
+
+</script>
+</body>
+
+<html>
